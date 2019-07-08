@@ -1,0 +1,28 @@
+.catContainer{
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 700px;
+    width: 382px;
+}
+
+.catModel{
+    position: absolute;
+    z-index: 1;
+}
+
+.faces{
+    position: absolute;
+    z-index: 2;
+}
+
+.bgs{
+    position: absolute;
+    z-index: 0;
+}
+
+.hats{
+    z-index: 3;
+    position: absolute;
+}
+
