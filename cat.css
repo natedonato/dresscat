@@ -1,28 +1,73 @@
+.wholeContainer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .catContainer{
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border: 1px solid black;
     height: 700px;
     width: 382px;
 }
 
-.catModel{
+.prevButtons, .nextButtons {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.prevButtons > button{
+    width: 100px;
+    height: 100px;
+    background-image: url(./prevbutton.png);
+    font-size: 0px;
+    opacity: 0.8;
+}
+
+button:active{
+    opacity: 1;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+
+.hats{
+    z-index: 3;
     position: absolute;
-    z-index: 1;
+    display: none;
 }
 
 .faces{
     position: absolute;
     z-index: 2;
+    display: none;
 }
 
-.bgs{
+.outfits{
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.catModel{
     position: absolute;
     z-index: 0;
 }
 
-.hats{
-    z-index: 3;
+.bgs{
     position: absolute;
+    z-index: -1;
+    display: none;
 }
 
+.defaultbg{
+    position: absolute;
+    z-index: -2;
+}
