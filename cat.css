@@ -21,6 +21,7 @@
 }
 
 button{ 
+    background-color: transparent;
     cursor: pointer;
     border: none;
     width: 100px;
